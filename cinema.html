@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon/movies.ico" type="image/x-icon">
     <title>Cinema</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/movie-small.jpg" type="image/jpg">
+        <source media="(max-width: 1350px)" srcset="images/movie-medium.jpg" type="image/jpg">
+        <img src="images/movie-full.jpg" alt="Sala de cinema">
+    </picture>
+    <h1>Cinema du bom</h1>
+
     <p><a href="index.html" target="_self" rel="prev" alt="Botão Voltar"><img src="images/back.ico" alt="Botão voltar para a página principal"></a></p>
 </body>
 </html>
