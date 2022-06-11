@@ -20,6 +20,14 @@ body {
     background-color: #ffd60844;
 }
 
+#principal::before {
+    content: "🍌";
+}
+
+#principal::after {
+    content: "🍌";
+}
+
 h1 {
     font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
     font-size: 3em;
@@ -47,6 +55,10 @@ p {
 
 .importante::after {
     content: "]";
+}
+
+.linknext {
+    text-align: right;
 }
 
 a {
