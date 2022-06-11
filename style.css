@@ -35,3 +35,29 @@ h2 {
 p {
     text-align: justify;
 }
+
+.importante {
+    font-family: monospace;
+    text-align: ;
+}
+
+.importante::before {
+    content: "[";
+}
+
+.importante::after {
+    content: "]";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: #f2cb05;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #4BD941;
+}
