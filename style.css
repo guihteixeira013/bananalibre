@@ -2,22 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+/*CSS VARIABLES*/
+:root {
+    --cor0 : #4BD941;
+    --cor1 : #f2cb057a;
+    --cor2 : #ffd60844;
+    --cor3 : #8c360454;
+
+    --font-destaque : 'Shadows Into Light', 'Times New Roman', Times, serif;
+    --font-padrao : 'Work Sans', Arial, Helvetica, sans-serif;
+    --font-opcional : 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-main {
-    background-color: white;
-    border-radius: 7px;
-    box-shadow: 5px 5px 15px #8c360454;
-    margin: auto;
-    padding: 10px;
-    width: 600px;
-    background-attachment: fixed;
+* {
+    font-family: var(--font-padrao);
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    background-color: #ffd60844;
+    background-color: var(--cor2);
 }
 
 #principal::before {
@@ -28,49 +32,84 @@ body {
     content: "🍌";
 }
 
-h1 {
+header {
+    background-color: #ffd608;
+    box-shadow: 0px 0px 10px 0px var(--cor3);
+    height: 230px;
+    max-width: 100%;
+}
+
+header h1 {
+    color: black;
     font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
     font-size: 3em;
-    color: #8C3604;
+    font-weight: bold;
+    padding: auto;
     text-align: center;
 }
 
-h2 {
-    font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
-    background-color: #f2cb057a;
-    padding: 5px;
+main {
+    background-color: white;
+    border-radius:  0px 0px 7px 7px;
+    box-shadow: 0px 5px 10px 0px var(--cor3);
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+    background-attachment: fixed;
 }
 
-p {
+main h2 {
+    background-color: var(--cor3);
+    font-family: var(--font-opcional);
+    padding: 0px 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0px -10px 0px -10px;    
+}
+
+main p {
     text-align: justify;
+    font-size: 1em;
+    padding: 10px;
 }
 
-.importante {
-    font-family: monospace;
-    text-align: ;
+main a {
+    text-decoration: none;
 }
 
-.importante::before {
-    content: "[";
+main a:hover {
+    color: var(--cor0);
+    font-weight: 400;
 }
 
-.importante::after {
-    content: "]";
+main blockquote {
+    background-color: #ffd6081c;
+    margin-left: 30px;
+    border-radius: 100px 20px;
 }
 
 .linknext {
     text-align: right;
 }
 
-a {
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+    padding: 5px;
+}
+
+footer > p > a {
     text-decoration: none;
+    color: var(--cor0);
 }
 
-a:active {
-    color: #f2cb05;
-    font-weight: 500;
+footer > p > a:hover {
+    font-weight: 400;
 }
 
-a:hover {
-    color: #4BD941;
+footer > p > a:active {
+    color: var(--cor1);
 }
