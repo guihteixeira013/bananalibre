@@ -88,6 +88,10 @@ main blockquote {
     border-radius: 100px 20px;
 }
 
+main ul {
+    list-style-position: inside;
+}
+
 .linknext {
     text-align: right;
 }
