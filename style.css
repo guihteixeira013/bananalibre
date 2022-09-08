@@ -4,10 +4,11 @@
 
 /*CSS VARIABLES*/
 :root {
-    --cor0 : #4BD941;
-    --cor1 : #f2cb057a;
-    --cor2 : #ffd60844;
-    --cor3 : #8c360454;
+    --cor0 : #FFB900;
+    --cor1 : #07004D;
+    --cor2 : #2D82B7;
+    --cor3 : #42E2B8;
+    --cor4 : #EB8A90;
 
     --font-destaque : 'Shadows Into Light', 'Times New Roman', Times, serif;
     --font-padrao : 'Work Sans', Arial, Helvetica, sans-serif;
@@ -33,8 +34,8 @@ body {
 }
 
 header {
-    background-color: #ffd608;
-    box-shadow: 0px 0px 10px 0px var(--cor3);
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.404);
     height: 230px;
     max-width: 100%;
 }
@@ -42,27 +43,31 @@ header {
 header h1 {
     color: black;
     font-family: 'Shadows Into Light', 'Times New Roman', Times, serif;
-    font-size: 3em;
+    font-size: 2.2em;
     font-weight: bold;
-    padding: auto;
+    padding-top: 70px;
     text-align: center;
 }
 
 main {
+    background-attachment: fixed;
     background-color: white;
     border-radius:  0px 0px 7px 7px;
-    box-shadow: 0px 5px 10px 0px var(--cor3);
-    margin: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.438);
     padding: 10px;
+    margin: auto;
     max-width: 800px;
-    background-attachment: fixed;
+}
+
+main > h1 {
+    font-size: 1.5em;
 }
 
 main h2 {
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     font-family: var(--font-opcional);
     padding: 0px 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 600;
     margin: 0px -10px 0px -10px;    
 }
@@ -78,12 +83,12 @@ main a {
 }
 
 main a:hover {
-    color: var(--cor0);
+    color: var(--cor1);
     font-weight: 400;
 }
 
 main blockquote {
-    background-color: #ffd6081c;
+    background-color: var(--cor3);
     margin-left: 30px;
     border-radius: 100px 20px;
 }
@@ -97,7 +102,7 @@ main ul {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--cor1);
     color: white;
     margin-top: 50px;
     text-align: center;
