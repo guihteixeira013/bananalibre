@@ -24,7 +24,7 @@
         <h2>Biblioteca</h2>
         <p> Cheirinho de mofo, de novo ou mesmo num kindle 77% carregado, ler um bom livro é tudo de bom.</p>
         <p>
-            <blockquote cite="https://en.wikipedia.org/wiki/Franz_Kafka">
+            <blockquote id="quote" cite="https://en.wikipedia.org/wiki/Franz_Kafka">
                 "Um livro deve ser um machado para o mar congelado que há dentro de nós." <em>Franz Kafka</em>
             </blockquote>
         </p>
@@ -33,5 +33,17 @@
     <footer>
         <p>Site criado e desenvolvido por <a href="#">Guilherme Teixeira</a> para o GitHub.</p>
     </footer>
+    <script>
+        var q = window.document.getElementById('quote')
+        q.addEventListener('mouseenter', toenter)
+        q.addEventListener('mouseout', toout)
+        
+        function toenter() {
+            q.style.background = '#37be9a'
+        }
+        function toout() {
+            q.style.background = '#42E2B8'
+        }
+    </script>
 </body>
 </html>
